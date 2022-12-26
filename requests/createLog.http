@@ -1,0 +1,10 @@
+POST http://localhost:8080/api/pmlogs
+Content-Type: application/json
+
+    {
+    "sensorId": "fwe",
+    "latitude": "few",
+    "longitude": "few",
+    "pm": "32",
+    "timestamp": "43"
+}
