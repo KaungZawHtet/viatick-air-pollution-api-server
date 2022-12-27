@@ -2,9 +2,9 @@ POST http://localhost:8080/api/pmlogs
 Content-Type: application/json
 
     {
-    "sensorId": "fwe",
-    "latitude": "few",
-    "longitude": "few",
-    "pm": "32",
+    "sensorId": "sensorA",
+    "latitude": "52.43545465",
+    "longitude": "22.44445454",
+    "pm2P5": 55555.53,
     "timestamp": "43"
 }

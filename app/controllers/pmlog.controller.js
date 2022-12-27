@@ -11,7 +11,7 @@ exports.create = (req, res) => {
         sensorId: req.body.sensorId,
         latitude: req.body.latitude,
         longitude: req.body.longitude,
-        pm: req.body.pm,
+        pm2P5: req.body.pm2P5,
         timestamp: req.body.timestamp,
     };
 

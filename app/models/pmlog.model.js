@@ -9,11 +9,11 @@ module.exports = (sequelize, Sequelize) => {
         longitude: {
             type: Sequelize.STRING
         },
-        pm: {
-            type: Sequelize.INTEGER
+        pm2P5: {
+            type: Sequelize.DOUBLE
         },
         timestamp: {
-            type: Sequelize.INTEGER
+            type: Sequelize.DATE
         }
     });
 
