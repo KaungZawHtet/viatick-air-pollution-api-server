@@ -16,13 +16,13 @@ Here are some facts to adapt the project at ease.
 
 1. In this project, DB Name is `viatick_air_pollution`. You should manually add the database into the MySQL Server before the other project setup steps.
 
-2. Simply run the command `node server.js` at the `api-server` directory. Then, required data table will automatically be created.
+2. Simply run the command `node server.js` at the root of `api-server` directory. Then, required data table, `pmlogs`, will automatically be created in the database `viatick_air_pollution`.
 
 3. The required data table is `pmlogs` to store PM data from sensors. Fields are `id`,`sensorId`,`latitude`,`longitude`,`pm2P5`,`timestamp`,`createdAt`,`updatedAt`. Basically, `timestamps` and `createdAt` are the same. timestamp is created from client side and createdAt is created from server side. If there is some big latency between them, difference can be huge.
 
 3. In the api-server directory, you will see `requests` directory. If you VS Code and REST Client extension, you can easily make some api calls with those http files. For not, you can use postman, insomnia and so on.
 
-4. There are 3 main api points: `findAll`, `deleteAll`, `create`
+4. There are 3 main api points: `findAll`, `deleteAll`, `create`. Check the implementation in the `pmlog.controller.js` file.
 
 
 ## Notable Modules
