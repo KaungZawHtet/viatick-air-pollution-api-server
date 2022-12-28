@@ -37,7 +37,7 @@ Because this is a test project built within a short time, there are some areas l
 
 2. **HTTPS** : The Request & Response should be on encrypted communication in the real world application. For this test project, only HTTP is used.
 
-3. **Customized API** : In this test project, the API calls looks like direct draw from database. For example, `createdAt` & `updatedAt` can be only for internal use in the server but there are included in the API call. In the real world applications, seperate API call should be designed.
+3. **Customized API** : In this test project, the API calls looks like direct draw from database. For example, `createdAt` & `updatedAt` can be only for internal use in the server but they are included in the API call. In the real world applications, seperate data draw for API Call should be designed.
 
 4. **API Versioning** : The API Versioning is not included in this test project.
 
