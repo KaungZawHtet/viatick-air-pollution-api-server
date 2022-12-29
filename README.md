@@ -18,7 +18,7 @@ Here are some facts to adapt the project at ease.
 
 2. Simply run the command `node server.js` at the root of `api-server` directory. Then, required data table, `pmlogs`, will automatically be created in the database `viatick_air_pollution`.
 
-3. The required data table is `pmlogs` to store PM data from sensors. Fields are `id`,`sensorId`,`latitude`,`longitude`,`pm2P5`,`timestamp`,`createdAt`,`updatedAt`. Basically, `timestamps` and `createdAt` are the same. timestamp is created from client side and createdAt is created from server side. If there is some big latency between them, difference can be huge.
+3. The required data table is `pmlogs` to store PM data from sensors. Fields are `id`,`sensorId`,`latitude`,`longitude`,`pm2P5`,`timestamp`,`createdAt`,`updatedAt`. Basically, `timestamps` and `createdAt` are the same. `timestamp` is created from client side and `createdAt` is created from server side. If there is some big latency between them, difference can be huge.
 
 3. In the api-server directory, you will see `requests` directory. If you VS Code and REST Client extension, you can easily make some api calls with those http files. For not, you can use postman, insomnia and so on.
 
@@ -33,11 +33,11 @@ Here are some facts to adapt the project at ease.
 
 Because this is a test project built within a short time, there are some areas left to consider and build.
 
-1. **Authentication** : Authentication does take part in this test project. For the real world applications, some common Authentication strategies such as Authentication Code, PKCE, Client Credentials, Devic Code, RefreshToken should be considered.
+1. **Authentication** : Authentication does not take part in this test project. For the real world applications, some common Authentication strategies such as Authentication Code, PKCE, Client Credentials, Device Code, RefreshToken should be considered.
 
 2. **HTTPS** : The Request & Response should be on encrypted communication in the real world application. For this test project, only HTTP is used.
 
-3. **Customized API** : In this test project, the API calls looks like direct draw from database. For example, `createdAt` & `updatedAt` can be only for internal use in the server but they are included in the API call. In the real world applications, seperate data draw for API Call should be designed.
+3. **Customized API** : In this test project, the API calls looks like direct draw from database. For example, `createdAt` & `updatedAt` can be only for internal use at the server side but they are included in the API call. In the real world applications, seperate data draw for API Call should be designed.
 
 4. **API Versioning** : The API Versioning is not included in this test project.
 
